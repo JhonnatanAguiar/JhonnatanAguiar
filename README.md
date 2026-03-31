@@ -1,7 +1,5 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,35:101010,70:1a1a1a,100:000000&height=240&section=header&text=Jhonnatan%20Aguiar&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20UI%2FUX%20%7C%20Business-Focused%20Solutions&descAlignY=58&descAlign=50" />
-
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=FFFFFF&size=22&center=true&vCenter=true&width=650&lines=Building+modern+digital+solutions;Focused+on+UI%2FUX%2C+performance+and+conversion;Turning+ideas+into+scalable+web+products" />
+  <img src="./assets/banner-dark-animated.svg" width="100%" alt="Jhonnatan Aguiar banner" />
 </p>
 
 <p align="center">

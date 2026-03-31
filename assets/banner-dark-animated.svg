@@ -1,0 +1,193 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030303"/>
+      <stop offset="50%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#030303"/>
+    </linearGradient>
+
+    <linearGradient id="beamFade" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="waveStrokeA" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-180 0;180 0;-180 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="waveStrokeB" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="160 0;-160 0;160 0" dur="10s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="titleShine" x1="80" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8c8c8c"/>
+      <stop offset="20%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#b5b5b5"/>
+      <stop offset="60%" stop-color="#ffffff"/>
+      <stop offset="80%" stop-color="#9e9e9e"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-180 0;220 0;-180 0" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="beamBlur" x="-50%" y="-10%" width="200%" height="120%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+
+    <style>
+      .eyebrow {
+        font: 600 12px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: rgba(255,255,255,0.58);
+        letter-spacing: 2px;
+      }
+      .nameBase {
+        font: 800 52px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: rgba(255,255,255,0.06);
+        letter-spacing: 0.4px;
+      }
+      .nameStroke {
+        font: 800 52px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: none;
+        stroke: url(#titleShine);
+        stroke-width: 1.15;
+        letter-spacing: 0.4px;
+      }
+      .desc {
+        font: 500 19px 'Segoe UI', Inter, Arial, sans-serif;
+        fill: #d2d2d2;
+        letter-spacing: 0.15px;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- moving vertical beams -->
+  <g opacity="0.22" filter="url(#beamBlur)">
+    <rect x="730" y="-30" width="2" height="400" fill="url(#beamFade)">
+      <animate attributeName="x" values="730;770;730" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.22;0.08" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="850" y="-30" width="1.5" height="400" fill="url(#beamFade)">
+      <animate attributeName="x" values="850;815;850" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.05;0.16;0.05" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="960" y="-30" width="2.5" height="400" fill="url(#beamFade)">
+      <animate attributeName="x" values="960;1010;960" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.06;0.24;0.06" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1080" y="-30" width="1.6" height="400" fill="url(#beamFade)">
+      <animate attributeName="x" values="1080;1040;1080" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.04;0.14;0.04" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- dense line waves -->
+  <g opacity="1">
+    <path d="M0 86 C130 58, 240 118, 380 92 S640 56, 800 88 S1040 132, 1200 92"
+      stroke="url(#waveStrokeA)" stroke-width="1.6" fill="none">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite"
+        values="
+        M0 86 C130 58, 240 118, 380 92 S640 56, 800 88 S1040 132, 1200 92;
+        M0 95 C145 70, 260 106, 400 88 S655 70, 815 98 S1050 120, 1200 102;
+        M0 86 C130 58, 240 118, 380 92 S640 56, 800 88 S1040 132, 1200 92"/>
+    </path>
+
+    <path d="M0 110 C150 80, 260 142, 410 114 S670 72, 825 110 S1045 150, 1200 116"
+      stroke="url(#waveStrokeB)" stroke-width="1.3" fill="none">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
+        values="
+        M0 110 C150 80, 260 142, 410 114 S670 72, 825 110 S1045 150, 1200 116;
+        M0 118 C165 92, 280 130, 430 108 S690 84, 845 118 S1060 140, 1200 124;
+        M0 110 C150 80, 260 142, 410 114 S670 72, 825 110 S1045 150, 1200 116"/>
+    </path>
+
+    <path d="M0 136 C160 108, 300 164, 455 138 S705 96, 870 136 S1060 174, 1200 144"
+      stroke="url(#waveStrokeA)" stroke-width="1.1" fill="none" opacity="0.88">
+      <animate attributeName="d" dur="11s" repeatCount="indefinite"
+        values="
+        M0 136 C160 108, 300 164, 455 138 S705 96, 870 136 S1060 174, 1200 144;
+        M0 146 C175 118, 320 154, 470 132 S720 108, 890 144 S1075 165, 1200 154;
+        M0 136 C160 108, 300 164, 455 138 S705 96, 870 136 S1060 174, 1200 144"/>
+    </path>
+
+    <path d="M0 168 C140 198, 290 132, 470 164 S730 214, 895 174 S1070 130, 1200 168"
+      stroke="url(#waveStrokeB)" stroke-width="1.15" fill="none" opacity="0.86">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+        values="
+        M0 168 C140 198, 290 132, 470 164 S730 214, 895 174 S1070 130, 1200 168;
+        M0 178 C160 206, 305 142, 485 156 S740 202, 910 168 S1080 142, 1200 178;
+        M0 168 C140 198, 290 132, 470 164 S730 214, 895 174 S1070 130, 1200 168"/>
+    </path>
+
+    <path d="M0 198 C150 170, 310 228, 500 196 S760 156, 925 198 S1085 242, 1200 212"
+      stroke="url(#waveStrokeA)" stroke-width="1" fill="none" opacity="0.72">
+      <animate attributeName="d" dur="10.5s" repeatCount="indefinite"
+        values="
+        M0 198 C150 170, 310 228, 500 196 S760 156, 925 198 S1085 242, 1200 212;
+        M0 210 C165 182, 325 220, 515 188 S780 170, 940 206 S1090 232, 1200 222;
+        M0 198 C150 170, 310 228, 500 196 S760 156, 925 198 S1085 242, 1200 212"/>
+    </path>
+
+    <path d="M0 226 C180 258, 350 186, 540 226 S790 274, 965 232 S1100 194, 1200 224"
+      stroke="url(#waveStrokeB)" stroke-width="0.95" fill="none" opacity="0.62">
+      <animate attributeName="d" dur="13s" repeatCount="indefinite"
+        values="
+        M0 226 C180 258, 350 186, 540 226 S790 274, 965 232 S1100 194, 1200 224;
+        M0 238 C195 266, 365 198, 555 218 S805 262, 980 224 S1110 206, 1200 236;
+        M0 226 C180 258, 350 186, 540 226 S790 274, 965 232 S1100 194, 1200 224"/>
+    </path>
+
+    <path d="M0 256 C170 228, 360 286, 560 254 S815 214, 990 254 S1110 296, 1200 266"
+      stroke="url(#waveStrokeA)" stroke-width="0.9" fill="none" opacity="0.52">
+      <animate attributeName="d" dur="14s" repeatCount="indefinite"
+        values="
+        M0 256 C170 228, 360 286, 560 254 S815 214, 990 254 S1110 296, 1200 266;
+        M0 268 C188 240, 378 278, 575 246 S830 226, 1002 264 S1120 286, 1200 278;
+        M0 256 C170 228, 360 286, 560 254 S815 214, 990 254 S1110 296, 1200 266"/>
+    </path>
+  </g>
+
+  <!-- subtle scanning line -->
+  <rect x="0" y="0" width="1200" height="1.2" fill="rgba(255,255,255,0.08)">
+    <animate attributeName="y" values="30;305;30" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.22;0" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- text -->
+  <g transform="translate(82 104)">
+    <text class="eyebrow" x="0" y="0">DIGITAL PRODUCTS • UI/UX • PERFORMANCE • CONVERSION</text>
+
+    <g transform="translate(0 84)">
+      <text class="nameBase" x="0" y="0">Jhonnatan Aguiar</text>
+      <text class="nameStroke" x="0" y="0" filter="url(#softGlow)">Jhonnatan Aguiar</text>
+    </g>
+
+    <text class="desc" x="0" y="128">
+      Full Stack Developer building modern web solutions with real business purpose
+    </text>
+  </g>
+</svg>
