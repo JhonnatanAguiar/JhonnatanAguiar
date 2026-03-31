@@ -113,5 +113,6 @@ Includes interactive components, state management and modular design structure a
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+  <img src="./metrics-overview.svg" width="49%" alt="GitHub overview" />
+  <img src="./metrics-languages.svg" width="49%" alt="GitHub languages and activity" />
 </p>
