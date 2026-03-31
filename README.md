@@ -42,24 +42,24 @@ Atualmente, sigo fortalecendo minha base técnica por meio de desenvolvimento pr
 
 ## 🎯 Current Focus
 
-- Building scalable web applications with Next.js and React  
-- Improving UI/UX with focus on conversion and user behavior  
-- Developing Decyphra as a real digital solution platform  
+- Building scalable web applications with Next.js and React
+- Improving UI/UX with focus on conversion and user behavior
+- Developing Decyphra as a real digital solution platform
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2"/>
 
 ## 💡 What I Bring
 
-- Strong focus on UI/UX and user behavior  
-- Clean, scalable and maintainable code structure  
-- Business-oriented approach to web development  
-- Attention to performance and conversion  
+- Strong focus on UI/UX and user behavior
+- Clean, scalable and maintainable code structure
+- Business-oriented approach to web development
+- Attention to performance and conversion
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2"/>
 
 ## 🚀 Featured Projects
 
-### 🔹 Decyphra Website  
+### 🔹 Decyphra Website
 
 <img src="https://via.placeholder.com/800x400?text=Decyphra+Preview" width="100%" />
 
@@ -67,7 +67,7 @@ Modern website built to represent a digital agency, focused on performance, clea
 Designed to simulate real business scenarios, with attention to user experience, structure and conversion-oriented layout.
 
 → Live Demo: https://decyphra.com.br  
-→ Repository: https://github.com/JhonnatanAguiar/Decyphra-Project  
+→ Repository: https://github.com/JhonnatanAguiar/Decyphra-Project
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2"/>
 
@@ -75,11 +75,11 @@ Designed to simulate real business scenarios, with attention to user experience,
 
 <img src="https://via.placeholder.com/800x400?text=Decyphra+Preview" width="100%" />
 
-Dynamic dashboard focused on advanced UI/UX and data visualization, built to explore complex interface patterns and improve React architecture skills.  
+Dynamic dashboard focused on advanced UI/UX and data visualization, built to explore complex interface patterns and improve React architecture skills.
 
 Includes interactive components, state management and modular design structure aimed at scalability and usability.
 
-→ Repository: https://github.com/JhonnatanAguiar/projeto-dashboard-advanced 
+→ Repository: https://github.com/JhonnatanAguiar/projeto-dashboard-advanced
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2"/>
 
@@ -112,4 +112,6 @@ Includes interactive components, state management and modular design structure a
 
 ## 📊 GitHub Activity
 
-Dynamic stats cards will be added soon through a self-hosted setup.
+<p align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</p>
