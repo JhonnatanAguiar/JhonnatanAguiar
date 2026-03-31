@@ -61,7 +61,7 @@ Atualmente, sigo fortalecendo minha base técnica por meio de desenvolvimento pr
 
 ### 🔹 Decyphra Website
 
-<img src="https://via.placeholder.com/800x400?text=Decyphra+Preview" width="100%" />
+<img src="./img/decyphra-home.png" width="100%" />
 
 Modern website built to represent a digital agency, focused on performance, clean design and scalability.  
 Designed to simulate real business scenarios, with attention to user experience, structure and conversion-oriented layout.
@@ -73,7 +73,7 @@ Designed to simulate real business scenarios, with attention to user experience,
 
 ### 🔹 Analytics Dashboard (In Development)
 
-<img src="https://via.placeholder.com/800x400?text=Decyphra+Preview" width="100%" />
+<img src="./img/dashboard-advanced-home.png" width="100%" />
 
 Dynamic dashboard focused on advanced UI/UX and data visualization, built to explore complex interface patterns and improve React architecture skills.
 
